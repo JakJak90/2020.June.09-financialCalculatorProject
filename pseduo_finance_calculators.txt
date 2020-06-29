@@ -1,0 +1,53 @@
+Task requirement:
+
+A program that allows a user to access two different financial calculators: 
+an investment calculator and a home loan repayment calculator
+
+Solution:
+
+request string input from user indicating if the would like to use the investment or bond repayment calculator
+
+if input matches neither "investment" or "bond"
+	
+	print error message and quit program
+
+if the user has indicated "investment"
+	
+	request value of deposit in Rands
+	
+	request the interest rate to be applied as a percentage
+	
+	request if they would like to calculate investment period as months or years
+		if years
+			request over how many years they would like to pay
+		
+		if months
+			request over how many months they would like to pay and convert to years
+	
+	request type of interest: compound or simple
+		if simple
+			calculate value by multiplying the deposit by a pre-determined value of 1 plus the product of interest and time
+		
+		if compund
+			calculate value by multiplying the deposit by a pre-determined value of 1 plus the interest which has been raised
+			to the power of time
+	
+	output a message indicating expected final value of investment
+
+if the user has indicated "bond"
+
+	request current value of the house in Rands
+	
+	request interest rate as a percentage
+	
+	request if they would like to calculate period as months or years
+		if years
+			request over how many years they would like to pay and convert to months
+		
+		if months
+			request over how many months they would like to pay
+	
+	calculate the repayment value by dividing the product of the monthly interest rate and house value by 1 minus the 
+	pre-determined value of the sum of 1 and i raised to the power of negative time
+
+	output a message indicating expected monthly installment amount
